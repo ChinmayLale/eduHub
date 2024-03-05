@@ -1,15 +1,18 @@
 body {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
   /* background-color: sandybrown; */
 }
 
 /* =====================================NavBar Css Starts Here======================================================= */
 
 .navbar{
-  position: absolute;
+  position: fixed;
+  z-index: 99;
+  backdrop-filter: blur(50px);
   display: flex;
   top: 0;
   font-family: "Madimi One", sans-serif;
@@ -52,13 +55,13 @@ body {
   font-size: 1vw;
 }
 .navbar .menu a{
-  font-family: "Exo 2", sans-serif;
+  font-family: monospace,"Exo 2", sans-serif;
   text-decoration: none;
   color: #ECB159;
 }
 .navbar .menu a:hover{
   color: crimson;
-  text-decoration: 5px #17C3B2 underline ;
+  text-decoration: 2px #17C3B2 underline ;
 }
 .navbar .login{
   height: 80%;
@@ -100,4 +103,59 @@ body {
  }
  .navbar .login-btn:hover {
   color: whitesmoke;
+ }
+
+
+ /* ============================================================Hero Section CSS Starts here ================================== */
+
+ .hero{
+  position: relative;
+  height:50vh;
+  width: 100%;
+  margin-top: 8vh;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: monospace;
+  /* background-color: ; */
+  background-image: linear-gradient( #FAF8F1,#FAEAB1);
+ }
+.hero .left{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  /* background-color:#EFFFFD; */
+  /* FDF4F5  , E3F4F4 ,ECF2FF , FFFBEB , FEFBE7  , FFF6EA*/
+  width: 50%;
+  height: 100%;
+}
+ .hero .left h1{
+    font-family: monospace;
+    font-size: 3vmax;
+    font-weight: 800;
+    width: 45%;
+    margin-left: 5vmax;
+    color:#56220b;
+    /* background: linear-gradient(to right, #f32170, 
+    #ff6b08, #cf23cf, #eedd44); 
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text; */
+ }
+
+ .hero .right{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    /* background-color: #fff; */
+ }
+
+ .hero .right img{
+    width: 40%;
+    height: 80%;
+    border-radius: 50%;
  }

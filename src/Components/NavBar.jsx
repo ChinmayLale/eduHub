@@ -6,8 +6,8 @@ function NavBar(props) {
     return (
         <div className="navbar">
             <div className="logo">
-                <img src={edulogo1} alt="" style={{ width: '50px', height: '50px'}}/>
-                <h2>Edu<span style={{ color: props.mod==='light'? '#561C24' :'crimson' }}>Hub</span></h2>
+                <img src={edulogo1} alt="" style={{ width: '50px', height: '50px' }} />
+                <h2>Edu<span style={{ color: props.mod === 'light' ? '#561C24' : 'crimson' }}>Hub</span></h2>
             </div>
             <div className="menu">
                 <h3><a href="#/">Home</a></h3>
