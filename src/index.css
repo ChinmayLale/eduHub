@@ -7,6 +7,11 @@ body {
   /* background-color: sandybrown; */
 }
 
+*{
+  margin: 0;
+  padding: 0;
+}
+
 /* =====================================NavBar Css Starts Here======================================================= */
 
 .navbar{
@@ -18,7 +23,7 @@ body {
   font-family: "Madimi One", sans-serif;
   width: 100vw;
   height: 8vh;
-  /* background-color: rgba(255, 248, 220, 0.575); */
+  background-color: rgba(245, 245, 245, 0.3);
   border-bottom: 1px solid rgb(90, 90, 90);
   /* justify-content: space-around; */
   align-items: center;
@@ -110,22 +115,21 @@ body {
 
  .hero{
   position: relative;
-  height:50vh;
+  height:70vh;
   width: 100%;
   margin-top: 8vh;
   display: flex;
   flex-wrap: wrap;
   font-family: monospace;
-  /* background-color: ; */
-  background-image: linear-gradient( #FAF8F1,#FAEAB1);
+  background-color: white;
+  /* background-image: linear-gradient( to right ,#F6FDC3 , #FF8080); */
  }
 .hero .left{
   position: relative;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   /* background-color:#EFFFFD; */
   /* FDF4F5  , E3F4F4 ,ECF2FF , FFFBEB , FEFBE7  , FFF6EA*/
   width: 50%;
@@ -133,17 +137,125 @@ body {
 }
  .hero .left h1{
     font-family: monospace;
-    font-size: 3vmax;
+    font-size: 4.8vmax;
     font-weight: 800;
-    width: 45%;
-    margin-left: 5vmax;
-    color:#56220b;
-    /* background: linear-gradient(to right, #f32170, 
-    #ff6b08, #cf23cf, #eedd44); 
-    -webkit-text-fill-color: transparent; 
-    -webkit-background-clip: text; */
- }
+    width: 80%;
+    /* margin-left: 5vmax; */
+    color:#A94438 ;
+    margin-top: 10%;
+    /* background-color: #17C3B2; */
 
+ }
+ .hero .left h2{
+    font-family: monospace;
+    font-size: 2.5vmax;
+    width: 80%;
+    margin-top: 10px;
+    /* background-color: cadetblue; */
+ }
+.hero .left .btns{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  /* background-color: #17C3B2; */
+  width: 80%;
+  justify-content: space-around;
+  align-items: center;
+  height: 15%;
+  margin-top: 10%;
+}
+/* btn COde=============================== */
+.animated-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 16px 36px;
+  border: 4px solid;
+  border-color: transparent;
+  font-size: 16px;
+  background-color: #cacaca;
+  border-radius: 100px;
+  font-weight: 600;
+  color: #1f387e;
+  box-shadow: 0 0 0 2px #ffffff;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button svg {
+  position: absolute;
+  width: 24px;
+  fill: #1f387e;
+  z-index: 9;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .arr-1 {
+  right: 16px;
+}
+
+.animated-button .arr-2 {
+  left: -25%;
+}
+
+.animated-button .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: #353a6a;
+  border-radius: 50%;
+
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .text {
+  position: relative;
+  z-index: 1;
+  transform: translateX(-12px);
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button:hover {
+  box-shadow: 0 0 0 12px transparent;
+  color: #f0f0f0;
+  border-radius: 12px;
+}
+
+.animated-button:hover .arr-1 {
+  right: -25%;
+}
+
+.animated-button:hover .arr-2 {
+  left: 16px;
+}
+
+.animated-button:hover .text {
+  transform: translateX(12px);
+}
+
+.animated-button:hover svg {
+  /* fill: #1f387e; */
+  fill: #f0f0f0;
+}
+
+.animated-button:active {
+  scale: 0.95;
+  box-shadow: 0 0 0 4px rgb(61, 83, 28);
+}
+
+.animated-button:hover .circle {
+  width: 220px;
+  height: 220px;
+  opacity: 1;
+}
+
+/* ========================================================== */
  .hero .right{
     position: relative;
     display: flex;
@@ -154,8 +266,17 @@ body {
     /* background-color: #fff; */
  }
 
- .hero .right img{
-    width: 40%;
-    height: 80%;
+ .hero .right .heroimg{
+    width: 45%;
+    height: 70%;
     border-radius: 50%;
+    background-color: whitesmoke;
+    padding: 1px;
+    border : 2px solid #56220b;
+
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+box-shadow:  28px 28px 56px #989898,
+             -28px -28px 56px #ffffff;
  }
+
+ 
