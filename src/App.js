@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import NavBar from './Components/NavBar';
-import Hero from './Components/Hero';
+import Home from './Components/Home';
+
+
 function App() {
   const [mode , setMode]  =useState('light');
   const changeMode = () => {
@@ -20,7 +22,9 @@ function App() {
   return (
     <>
       <NavBar mod={mode} changemode = {changeMode}/>
-      <Hero mod={mode}/>
+
+      <Home mod={mode}/>
+
     </>
   );
 }

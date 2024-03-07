@@ -7,14 +7,14 @@ body {
   /* background-color: sandybrown; */
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
 /* =====================================NavBar Css Starts Here======================================================= */
 
-.navbar{
+.navbar {
   position: fixed;
   z-index: 99;
   backdrop-filter: blur(50px);
@@ -29,10 +29,11 @@ body {
   align-items: center;
 }
 
-.navbar .logo{
+.navbar .logo {
   width: 10%;
   height: 100%;
-  color: #ECB159;
+  color: #04e5c9;
+  /*#ECB159 */
   font-family: "Madimi One", sans-serif;
   font-weight: 800;
   font-size: 1.2vw;
@@ -45,7 +46,7 @@ body {
   /* background-color: blanchedalmond; */
 }
 
-.navbar .menu{
+.navbar .menu {
   height: 100%;
   width: 50%;
   /* background-color: rgba(255, 228, 196, 0.045); */
@@ -59,24 +60,28 @@ body {
   font-weight: 100;
   font-size: 1vw;
 }
-.navbar .menu a{
-  font-family: monospace,"Exo 2", sans-serif;
+
+.navbar .menu a {
+  font-family: monospace, "Exo 2", sans-serif;
   text-decoration: none;
-  color: #ECB159;
+  color: #04e5c9;
 }
-.navbar .menu a:hover{
+
+.navbar .menu a:hover {
   color: crimson;
-  text-decoration: 2px #17C3B2 underline ;
+  text-decoration: 2px #17C3B2 underline;
 }
-.navbar .login{
+
+.navbar .login {
   height: 80%;
   width: 15%;
   display: flex;
   flex-direction: row;
 }
-.navbar .login-btn{
+
+.navbar .login-btn {
   padding: 0.8em 1.2em;
-  border: 2px solid #561C24;
+  border: 2px solid #1a2e35;
   border-radius: 10px;
   position: relative;
   overflow: hidden;
@@ -87,10 +92,10 @@ body {
   transition: .3s;
   z-index: 1;
   font-family: inherit;
-  color: #561C24;
+  color: #1a2e35;
 }
 
-.navbar .login-btn::before{
+.navbar .login-btn::before {
   content: '';
   width: 0;
   height: 300%;
@@ -98,72 +103,85 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(45deg);
-  background: #561C24;
+  background: #1a2e35;
   transition: .5s ease;
   display: block;
   z-index: -1;
 }
+
 .navbar .login-btn:hover:before {
   width: 105%;
- }
- .navbar .login-btn:hover {
+}
+
+.navbar .login-btn:hover {
   color: whitesmoke;
- }
+}
 
 
- /* ============================================================Hero Section CSS Starts here ================================== */
+/* ============================================================Hero Section CSS Starts here ================================== */
 
- .hero{
+.hero {
   position: relative;
-  height:70vh;
+  height: 70vh;
   width: 100%;
   margin-top: 8vh;
+  /* padding-bottom: 5%; */
   display: flex;
   flex-wrap: wrap;
   font-family: monospace;
-  background-color: white;
+  /* background-color: black; */
   /* background-image: linear-gradient( to right ,#F6FDC3 , #FF8080); */
- }
-.hero .left{
+}
+
+.hero .left {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  /* background-color:#EFFFFD; */
-  /* FDF4F5  , E3F4F4 ,ECF2FF , FFFBEB , FEFBE7  , FFF6EA*/
   width: 50%;
   height: 100%;
 }
- .hero .left h1{
-    font-family: monospace;
-    font-size: 4.8vmax;
-    font-weight: 800;
-    width: 80%;
-    /* margin-left: 5vmax; */
-    color:#A94438 ;
-    margin-top: 10%;
-    /* background-color: #17C3B2; */
 
- }
- .hero .left h2{
-    font-family: monospace;
-    font-size: 2.5vmax;
-    width: 80%;
-    margin-top: 10px;
-    /* background-color: cadetblue; */
- }
-.hero .left .btns{
+.hero .left h1 {
+  font-family: monospace;
+  font-size: 4.8vmax;
+  font-weight: 800;
+  width: 80%;
+  /* margin-left: 5vmax; */
+  color: #00927d;
+  /* #00dfc0 */
+  margin-top: 10%;
+  margin-left: 3.5vw;
+  /* background-color: #17C3B2; */
+
+}
+
+.hero .left h2 {
+  font-family: monospace;
+  font-size: 2.5vmax;
+  width: 80%;
+  margin-top: 10px;
+  margin-left: 3.5vw;
+  color: #561C24;
+  /* background-color: cadetblue; */
+}
+
+.hero .left .btns {
   position: relative;
   display: flex;
   flex-direction: row;
   /* background-color: #17C3B2; */
   width: 80%;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   height: 15%;
-  margin-top: 10%;
+  margin-top: 8%;
+  margin-left: 3.5vw;
+  margin-bottom: 8%;
+
 }
+
 /* btn COde=============================== */
 .animated-button {
   position: relative;
@@ -174,10 +192,10 @@ body {
   border: 4px solid;
   border-color: transparent;
   font-size: 16px;
-  background-color: #cacaca;
+  background-color: #ECB159;
   border-radius: 100px;
   font-weight: 600;
-  color: #1f387e;
+  color: #561C24;
   box-shadow: 0 0 0 2px #ffffff;
   cursor: pointer;
   overflow: hidden;
@@ -187,7 +205,7 @@ body {
 .animated-button svg {
   position: absolute;
   width: 24px;
-  fill: #1f387e;
+  fill: #561C24;
   z-index: 9;
   transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
 }
@@ -207,7 +225,7 @@ body {
   transform: translate(-50%, -50%);
   width: 20px;
   height: 20px;
-  background-color: #353a6a;
+  background-color: #561C24;
   border-radius: 50%;
 
   opacity: 0;
@@ -256,27 +274,201 @@ body {
 }
 
 /* ========================================================== */
- .hero .right{
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-    height: 100%;
-    /* background-color: #fff; */
- }
+.hero .right {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+  /* background-color: #fff; */
+}
 
- .hero .right .heroimg{
-    width: 45%;
-    height: 70%;
-    border-radius: 50%;
-    background-color: whitesmoke;
-    padding: 1px;
-    border : 2px solid #56220b;
+.hero .right .heroimg {
+  position: relative;
+  width: 55%;
+  height: 85%;
+  border-radius: 50%;
+  background-color: whitesmoke;
+  padding: 1px;
+  border: 2px solid #56220b;
+  border-radius: 50%;
+  background: #aea2a2;
+  box-shadow: 31px 31px 53px #867d7d,
+    -31px -31px 53px #ffffff;
+}
 
-    background: linear-gradient(145deg, #f0f0f0, #cacaca);
-box-shadow:  28px 28px 56px #989898,
-             -28px -28px 56px #ffffff;
- }
 
- 
+
+/* ====================================================================Second Home Section Starts Here==================================== */
+
+
+.hero .second-home {
+  position: relative;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  height: 80vh;
+  padding: 5%;
+}
+.hero .second-home .title {
+  font-family:'Trebuchet MS', sans-serif;
+  font-size: 4vw;
+  margin-bottom: 2%;
+}
+
+.hero .second-home .courses{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 95%;
+  height: 100%;
+  /* background-color: chocolate; */
+}
+
+/* =====================================Course Card home section================================== */
+.ag-format-container {
+  width: 100%;
+  margin: 0 auto;
+  
+}
+
+.ag-courses_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 50px 0;
+}
+.ag-courses_item {
+  -ms-flex-preferred-size: calc(33.33333% - 30px);
+  flex-basis: calc(33.33333% - 30px);
+  border: 1px solid black;
+  margin: 0 10px 30px;
+  overflow: hidden;
+  border-radius: 28px;
+}
+.ag-courses-item_link {
+  display: block;
+  padding: 30px 20px;
+  background-color: #d0dbd5;
+
+  text-decoration: none;
+  overflow: hidden;
+
+  position: relative;
+}
+.ag-courses-item_link:hover,
+.ag-courses-item_link:hover .ag-courses-item_date {
+  text-decoration: none;
+  color: #1a2e35;
+}
+.ag-courses-item_link:hover .ag-courses-item_bg {
+  -webkit-transform: scale(10);
+  -ms-transform: scale(10);
+  transform: scale(10);
+}
+.ag-courses-item_title {
+  min-height: 87px;
+  margin: 0 0 25px;
+
+  overflow: hidden;
+
+  font-weight: bold;
+  font-size: 30px;
+  color: #1a2e35;
+
+  z-index: 2;
+  position: relative;
+}
+.ag-courses-item_date-box {
+  font-size: 18px;
+  color: #1a2e35;
+
+  z-index: 2;
+  position: relative;
+}
+.ag-courses-item_date {
+  font-weight: bold;
+  color: #1a2e35;
+
+  -webkit-transition: color .5s ease;
+  -o-transition: color .5s ease;
+  transition: color .5s ease
+}
+.ag-courses-item_bg {
+  height: 128px;
+  width: 128px;
+  background-color: #f9b234;
+
+  z-index: 1;
+  position: absolute;
+  top: -75px;
+  right: -75px;
+
+  border-radius: 50%;
+
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+.ag-courses_item:nth-child(2n) .ag-courses-item_bg {
+  background-color: #3ecd5e;
+}
+.ag-courses_item:nth-child(3n) .ag-courses-item_bg {
+  background-color: #e44002;
+}
+.ag-courses_item:nth-child(4n) .ag-courses-item_bg {
+  background-color: #952aff;
+}
+.ag-courses_item:nth-child(5n) .ag-courses-item_bg {
+  background-color: #cd3e94;
+}
+.ag-courses_item:nth-child(6n) .ag-courses-item_bg {
+  background-color: #4c49ea;
+}
+
+
+
+@media only screen and (max-width: 979px) {
+  .ag-courses_item {
+    -ms-flex-preferred-size: calc(50% - 30px);
+    flex-basis: calc(50% - 30px);
+  }
+  .ag-courses-item_title {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .ag-format-container {
+    width: 96%;
+  }
+
+}
+@media only screen and (max-width: 639px) {
+  .ag-courses_item {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+  }
+  .ag-courses-item_title {
+    min-height: 72px;
+    line-height: 1;
+
+    font-size: 24px;
+  }
+  .ag-courses-item_link {
+    padding: 22px 40px;
+  }
+  .ag-courses-item_date-box {
+    font-size: 16px;
+  }
+}
+
+/* ===================================================================================================== */

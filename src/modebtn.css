@@ -102,7 +102,7 @@
   }
   
   .theme__toggle {
-    background-color: hsl(48,90%,85%);
+    background-color: #04e5c9;
     border-radius: 25% / 50%;
     box-shadow: 0 0 0 0.125em var(--primaryT);
     padding: 0.25em;
@@ -116,7 +116,7 @@
   }
   
   .theme__toggle:before {
-    background-color: hsl(48,90%,55%);
+    background-color: #1a2e35;
     border-radius: 50%;
     content: "";
     width: 2.5em;

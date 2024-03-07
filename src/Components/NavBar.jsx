@@ -1,20 +1,20 @@
 import React from 'react';
 import edulogo1 from '../assets/edulogo_1.svg';
-// import edulogo2 from '../assets/edulogo_2.svg';
-// import edulogo3 from '../assets/edulogo_3.svg';
+import { Link } from 'react-router-dom';
 function NavBar(props) {
     return (
         <div className="navbar">
             <div className="logo">
                 <img src={edulogo1} alt="" style={{ width: '50px', height: '50px' }} />
-                <h2>Edu<span style={{ color: props.mod === 'light' ? '#561C24' : 'crimson' }}>Hub</span></h2>
+                <h2>Edu<span style={{ color: props.mod === 'light' ? '#1a2e35' : 'crimson' }}>Hub</span></h2>
             </div>
             <div className="menu">
-                <h3><a href="#/">Home</a></h3>
-                <h3><a href="#/">About</a></h3>
-                <h3><a href="#/">Courses</a></h3>
-                <h3><a href="#/">Reviews</a></h3>
-                <h3><a href="#/">Instructors</a></h3>
+                <h3><Link to="/home">Home</Link></h3>
+                <h3><Link to="/home">About</Link></h3>
+                <h3><Link to="/home">Courses</Link></h3>
+                <h3><Link to="/home">Reviews</Link></h3>
+                <h3><Link to="/home">Instructors</Link></h3>
+                {/* <Link>hello</Link> */}
             </div>
             <div className="login">
                 <button className='login-btn'>Login / Signup</button>
