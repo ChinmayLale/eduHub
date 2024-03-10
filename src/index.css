@@ -310,8 +310,10 @@ body {
   flex-direction: column;
   align-items: center;
   /* justify-content: center; */
+  /* background-color: #00927d; */
+  margin-top: 4%;
+  padding-bottom: 10%;
   height: 80vh;
-  padding: 5%;
 }
 .hero .second-home .title {
   font-family:'Trebuchet MS', sans-serif;
@@ -326,13 +328,13 @@ body {
   width: 95%;
   height: 100%;
   /* background-color: chocolate; */
+  padding: 0% 0% 2%;
 }
 
 /* =====================================Course Card home section================================== */
 .ag-format-container {
   width: 100%;
   margin: 0 auto;
-  
 }
 
 .ag-courses_box {
@@ -471,4 +473,64 @@ body {
   }
 }
 
-/* ===================================================================================================== */
+/* ======================================================================================================================================== */
+/* ====================================================================Third Home Section Starts Here==================================== */
+
+.hero .third-home{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+
+  margin-top: 2%;
+  /* background-color: chocolate; */
+  padding: 4%;
+  align-items: center;
+}
+.hero .third-home h1{
+  font-size: 3vmax;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.hero .third-home h3{
+  margin-top: 1%;
+  font-size: 1.2vmax;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero .third-home .features{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin: 2%;
+  /* background-color: #00927d; */
+  justify-content: left;
+  width: 95%;
+  height: 100%;
+  justify-content: space-around;
+}
+
+.hero .third-home .features img{
+  width: 40%;
+  height: 100%;
+  background-size: cover;
+  /* border-radius: 50%; */
+}
+
+.hero .third-home .features .keyfeatures{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+  height: 100%;
+  /* background-color: #2e2e2e; */
+}
+.hero .third-home .features .keyfeatures h2{
+  font-size: 1.5vmax;
+}
+.hero .third-home .features .keyfeatures span{
+  width: 10%;
+  font-size: 2vmax;
+  height: 10%;
+}

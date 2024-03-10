@@ -1,6 +1,12 @@
 import React from 'react';
+// import Db from './DataBaseConnect';
 import anim1 from '../assets/animations/bgpic1.jpg';
-import anim4 from '../assets/animations/anim4.mp4';
+import student from '../assets/animations/6461.jpg';
+import { useState , useEffect } from 'react';
+import '../index.css';
+
+
+
 function Home() {
   return (
     <div className="hero">
@@ -31,13 +37,17 @@ function Home() {
         <img src={anim1} alt="" className='heroimg' />
       </div>
 
+
+
+
       <div className="second-home">
         <h1 className='title'>Our Leading Course Catagory</h1>
         <div className="courses">
           <div className="ag-format-container">
-            <div className="ag-courses_box">
+            <div className="ag-courses_box" id='courseBox'>
+
               <div className="ag-courses_item">
-                <a href="#" className="ag-courses-item_link">
+                <a href="" className="ag-courses-item_link">
                   <div className="ag-courses-item_bg"></div>
 
                   <div className="ag-courses-item_title">
@@ -54,7 +64,7 @@ function Home() {
               </div>
 
               <div className="ag-courses_item">
-                <a href="#" className="ag-courses-item_link">
+                <a href="" className="ag-courses-item_link">
                   <div className="ag-courses-item_bg"></div>
 
                   <div className="ag-courses-item_title">
@@ -71,7 +81,7 @@ function Home() {
               </div>
 
               <div className="ag-courses_item">
-                <a href="#" className="ag-courses-item_link">
+                <a href="" className="ag-courses-item_link">
                   <div className="ag-courses-item_bg"></div>
 
                   <div className="ag-courses-item_title">
@@ -88,7 +98,7 @@ function Home() {
               </div>
 
               <div className="ag-courses_item">
-                <a href="#" className="ag-courses-item_link">
+                <a href="" className="ag-courses-item_link">
                   <div className="ag-courses-item_bg"></div>
 
                   <div className="ag-courses-item_title">
@@ -105,7 +115,7 @@ function Home() {
               </div>
 
               <div className="ag-courses_item">
-                <a href="#" className="ag-courses-item_link">
+                <a href="" className="ag-courses-item_link">
                   <div className="ag-courses-item_bg"></div>
 
                   <div className="ag-courses-item_title">
@@ -122,7 +132,7 @@ function Home() {
               </div>
 
               <div className="ag-courses_item">
-                <a href="#" className="ag-courses-item_link">
+                <a href="" className="ag-courses-item_link">
                   <div className="ag-courses-item_bg"></div>
 
                   <div className="ag-courses-item_title">
@@ -132,7 +142,7 @@ function Home() {
               </div>
 
               <div className="ag-courses_item">
-                <a href="#" className="ag-courses-item_link">
+                <a href="" className="ag-courses-item_link">
                   <div className="ag-courses-item_bg">
                   </div>
                   <div className="ag-courses-item_title">
@@ -148,7 +158,7 @@ function Home() {
               </div>
 
               <div className="ag-courses_item">
-                <a href="#" className="ag-courses-item_link">
+                <a href="" className="ag-courses-item_link">
                   <div className="ag-courses-item_bg"></div>
 
                   <div className="ag-courses-item_title">
@@ -169,6 +179,22 @@ function Home() {
         </div>
       </div>
 
+
+
+      <div className="third-home">
+        <h1>Why To Choose Eduhub ?</h1>
+        <h3>India's Fastest Growing Educational Platform !</h3>
+        <div className="features">
+          <div className="keyfeatures">
+            <h1>Key Features</h1>
+            <h2><span style={{ color: '#00927d' }}>&#8226;</span> One to One Teaching</h2>
+            <h2><span style={{ color: '#00927d' }}>&#8226;</span> Seprate Doubt Solving</h2>
+            <h2><span style={{ color: '#00927d' }}>&#8226;</span> Get Connected With Friends in area</h2>
+            <h2><span style={{ color: '#00927d' }}>&#8226;</span> Self Based Learning</h2>
+          </div>
+          <img src={student} alt="" />
+        </div>
+      </div>
 
     </div>
   )
