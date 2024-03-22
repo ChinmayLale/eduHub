@@ -537,14 +537,14 @@ button:active {
   height: 100%;  
   margin-top: 2%;
   margin-bottom: 2%;
-  background-color: chocolate;
+  /* background-color: chocolate; */
   align-items: center;
 }
 
 .hero .third-home h1{
   position: relative;
   margin: 1%;
-  background-color: #fff;
+  /* background-color: #fff; */
   font-size: 4vw;
 }
 
@@ -552,9 +552,12 @@ button:active {
   position: relative;
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
   gap: 5%;
-  background-color: antiquewhite;
-  width: 95%;
+  /* background-color: antiquewhite; */
+  width: 100%;
+  padding-left: 2.5%;
+  padding-right: 2.5%; 
   height: 100%;
 }
 
@@ -563,8 +566,8 @@ button:active {
   display: flex;
   flex-direction: column;
   width: 20%;
-  margin: 1%;
   border-radius: 50px;
+  margin: 1%;
   justify-content: end;
   color: #fff;
   text-align: center;

@@ -1,10 +1,10 @@
 import React from 'react';
-// import Db from './DataBaseConnect';
+import {motion} from 'framer-motion';
 import anim1 from '../assets/animations/bgpic1.jpg';
 import student from '../assets/animations/6461.jpg';
 import { useState, useEffect } from 'react';
 import '../index.css';
-
+import LoadingElement from './LoadingElement';
 
 
 function Home() {
@@ -24,16 +24,27 @@ function Home() {
   }, [])
 
 
+  const onLoad = {
+    prev : {
+      y : '20vh'
+    },
+    anim : {
+      y : 0
+    }
+  }
+
+
+
   return (
     <div className="hero">
       <div className="hero-content">
         <div className="left">
-          <h1>
+          <motion.h1 initial={{x:'-100vw'}} animate={{x:0}} transition={{ duration:2 }}>
             Go beyond the limitations of <span style={{ color: '#1a2e35' }}>e-learning</span>
             {/* #0d594f */}
-          </h1>
+          </motion.h1>
           <h2>Empower colabrative learning  Anytime Anywhere Togather !</h2>
-          <div className="btns">
+          <motion.div className="btns" initial={{y:'+100vh'}} animate={{y:0}} transition={{duration:1.5 ,delay:0.5,type:'spring' ,stiffness:40}}>
             <button className="animated-button">
               <svg xmlns="http://www.w3.org/2000/svg" className="arr-2" viewBox="0 0 24 24">
                 <path
@@ -48,7 +59,7 @@ function Home() {
                 ></path>
               </svg>
             </button>
-          </div>
+          </motion.div>
         </div>
         <div className="right">
           <img src={anim1} alt="" className='heroimg' />
@@ -58,7 +69,7 @@ function Home() {
       <div className="second-home">
         <h1 className='title'>Our Leading Course Catagory</h1>
         <div className="courses">
-          {courseName && courseName.slice(0, show).map((courseName) => (
+          {courseName ? courseName.slice(0, show).map((courseName) => (
             <div className="card" key={courseName.id} >
               <div className="top-section" style={{ backgroundImage: `url(${courseName.img})` }}>
                 <div className="border"></div>
@@ -91,8 +102,8 @@ function Home() {
                 </div>
               </div>
             </div>
-          ))
-          }
+          )) 
+          :<LoadingElement/>}
 
         </div>
         <button onClick={loadMore}>
@@ -107,11 +118,32 @@ function Home() {
 
 
       <div className="third-home">
-        <h1>Why to choose EduHub</h1>
+        <motion.h1 initial={{y:'20vh'}} whileInView={{y:0}} transition={{duration:1}}>Why to choose EduHub</motion.h1>
         <div className="featuresSection">
-          <div className="feature">
+          <motion.div  whileInView={{rotateY : 360}} transition={{duration:1 , delay:0.5}}  className="feature">
             <div>
               <h2>Feature 1</h2>
+              <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, culpa.</h3>
+            </div>
+          </motion.div>
+
+          <div className="feature">
+            <div>
+              <h2>Feature 2</h2>
+              <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, culpa.</h3>
+            </div>
+          </div>
+
+          <div className="feature">
+            <div>
+              <h2>Feature 3</h2>
+              <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, culpa.</h3>
+            </div>
+          </div>
+
+          <div className="feature">
+            <div>
+              <h2>Feature 4</h2>
               <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, culpa.</h3>
             </div>
           </div>
